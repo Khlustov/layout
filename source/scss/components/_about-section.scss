@@ -1,20 +1,49 @@
 // main
 .about {
-    width: 90%;
-    height: 720px;
+    width: 90%;    
     display: flex;
     justify-content: space-around;
     align-items: center;  
+
+    @include mobile {        
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    @include tablet {        
+        flex-direction: column;
+        justify-content: center;       
+    }
 }
 
 // content divs
 .about__content {
     width: 35%;
-    height: 95%;
+    height: 720px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;   
+    align-items: center; 
+    
+    @include mobile {
+        width: 100%;
+        height: 360px;                        
+    }
+
+    @include tablet {
+        width: 100%; 
+        height: 360px;                       
+    }
+}
+
+.about__content--cards {
+    @include mobile {
+        height: 600px;
+    }
+
+    @include tablet {
+        height: 600px;
+    }
 }
 
 .content-title {
@@ -24,12 +53,28 @@
     color: $black;
     text-align: left;
     padding-left: 20px;
+
+    @include mobile {
+        text-align: center;
+    }
+
+    @include tablet {
+        text-align: center;
+    }
 }
 
 .content-image {
     width: 280px;
     height: 380px;
     background: url('../images/about-section-images/about-section-image.png') center no-repeat;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
 }
 
 // content cards
