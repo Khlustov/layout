@@ -1335,6 +1335,26 @@ a {
           align-items: center;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .how-it-works__cards {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .how-it-works__cards {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .how-it-works__card {
   width: 400px;
   margin: 0 25px;
@@ -1351,6 +1371,20 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .how-it-works__card {
+    width: 90%;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .how-it-works__card {
+    width: 90%;
+    height: 400px;
+  }
 }
 
 .circle {
@@ -1422,6 +1456,106 @@ a {
 }
 
 .how-it-works-button:hover {
+  background: none;
+  color: #6F1EAA;
+}
+
+.for-veterinarians {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F3FA;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .for-veterinarians {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .for-veterinarians {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.for-veterinarians-content {
+  width: 560px;
+  height: 650px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .for-veterinarians-content {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .for-veterinarians-content {
+    width: 90%;
+  }
+}
+
+.for-veterinarians-content__image {
+  background: url("../images/for-veterinarians-section-images/woman-and-dog.png") center no-repeat;
+}
+
+.for-veterinarians-label {
+  margin-top: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F7A500;
+}
+
+.for-veterinarians-title {
+  margin-top: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #000;
+}
+
+.for-veterinarians-text {
+  margin-top: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000;
+}
+
+.for-veterinarians-button {
+  width: 165px;
+  height: 50px;
+  margin-top: 25px;
+  border: 1px solid #6F1EAA;
+  border-radius: 24px;
+  background-color: #6F1EAA;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFF;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.for-veterinarians-button:hover {
   background: none;
   color: #6F1EAA;
 }

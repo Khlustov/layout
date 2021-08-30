@@ -23,6 +23,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile { 
+        width: 95%;       
+        flex-direction: column;        
+    }
+
+    @include tablet {
+        width: 95%;
+        flex-direction: column;        
+    }
 }
 
 .how-it-works__card {
@@ -32,6 +42,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mobile {  
+        width: 90%;      
+        height: 400px;        
+    }
+
+    @include tablet {
+        width: 90%;
+        height: 400px;
+    }
 }
 
 .circle {
