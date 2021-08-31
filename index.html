@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/source/js/main.js" defer type="module"></script>
     <title>Mixlab</title>
 </head>
 <body>
@@ -138,6 +139,63 @@
                     <p class="for-veterinarians-text">Mixlab offers a simple, fast, reliable (and fun) home delivery pharmacy service for your clients. No more delays, no more miscommunications, no more grumpy pets. It’s time to partner with a pharmacy that cares about customer experience as much as you do.</p>
                     <button class="for-veterinarians-button">Learn More</button>
                 </div>  
+            </section>
+            <!-- reviews section -->
+            <section class="reviews">
+                <div class="hearts"></div>
+                <h3 class="reviews-title">Pets love Mixlab!</h3>
+                <p class="reviews-subtitle">See why we're 5 stars on 
+                    <a class="subtitle__link" href="https://www.yelp.com/">Yelp</a>, 
+                    <a class="subtitle__link" href="https://www.google.com/">Google</a> and 
+                    <a class="subtitle__link" href="https://www.facebook.com/">Facebook</a>:)
+                </p>
+                <div class="reviews-container">
+                    <button class="review-button review-button__prev" id="prev">←</button>
+                    <div class="reviews-cards">
+                        <div class="reviews-card">
+                            <div class="reviews-card-image reviews-card-image__dog"></div>
+                            <div class="reviews-card-content">
+                                <span class="reviews-card-text">“Tootsie just received her Mixlab order and she’s so excited for it! Within two hours of ordering it got delivered to the house and its like she knew it was at the door. She absolutely hates taking her medicine but she truly loves her Mixlab box because it’s so informative, quick, easy to order but especially because includes a new toy each time! Thank you Mixlab for always taking care of her! She can’t wait to place her next order now!”</span>
+                                <div class="review-author">
+                                    <div class="instagram-logo">
+                                        <img src="/source/images/icons/instagram.svg" alt="instagram" width="24">                                        
+                                    </div>
+                                    <p class="autor-info">Tootsie, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-card">
+                            <div class="reviews-card-image reviews-card-image__parrot"></div>
+                            <div class="reviews-card-content">
+                                <span class="reviews-card-text">“Tootsie received her Mixlab order and she’s so excited for it! Within two hours of ordering it got delivered to the house and its like she knew it was at the door. She absolutely hates taking her medicine but she truly loves her Mixlab box because it’s so informative, quick, easy to order but especially because includes a new toy each time! Thank you Mixlab for always taking care of her! She can’t wait to place her next order now!”</span>
+                                <div class="review-author">
+                                    <div class="instagram-logo">
+                                        <img src="/source/images/icons/instagram.svg" alt="instagram" width="24">                                        
+                                    </div>
+                                    <p class="autor-info">Tootsie, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-card">
+                            <div class="reviews-card-image reviews-card-image__cat"></div>
+                            <div class="reviews-card-content">
+                                <span class="reviews-card-text">“just received her Mixlab order and she’s so excited for it! Within two hours of ordering it got delivered to the house and its like she knew it was at the door. She absolutely hates taking her medicine but she truly loves her Mixlab box because it’s so informative, quick, easy to order but especially because includes a new toy each time! Thank you Mixlab for always taking care of her! She can’t wait to place her next order now!”</span>
+                                <div class="review-author">
+                                    <div class="instagram-logo">
+                                        <img src="/source/images/icons/instagram.svg" alt="instagram" width="24">                                        
+                                    </div>
+                                    <p class="autor-info">Tootsie, CA</p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                    <button class="review-button review-button__next" id="next">→</button>                        
+                </div> 
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                </div>   
             </section>
         </main>
     </div>
